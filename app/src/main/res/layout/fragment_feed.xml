@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FeedFragment">
+
+    <!-- RecyclerView -->
+
+    <!-- Sabit Alt Menü -->
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/aracRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="60dp"
+        app:layout_constraintBottom_toTopOf="@id/bottomNavigation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <LinearLayout
+        android:id="@+id/bottomNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="horizontal"
+        android:background="@android:color/white"
+        android:elevation="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <!-- Profil Simgesi -->
+
+        <!-- Sepet Simgesi -->
+
+        <ImageView
+            android:id="@+id/profileIcon"
+            android:layout_width="0dp"
+            android:layout_height="102dp"
+            android:layout_weight="1"
+            android:contentDescription="Profile Icon"
+
+            android:padding="8dp"
+            android:src="@drawable/profil"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/cartIcon"
+            android:layout_width="0dp"
+            android:layout_height="106dp"
+            android:layout_weight="1"
+            android:contentDescription="Cart Icon"
+            android:padding="8dp"
+            android:src="@drawable/cart"
+            android:visibility="visible"
+            app:tint="@android:color/black" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="361dp"
+        android:layout_height="41dp"
+        android:src="@drawable/car"
+        app:layout_constraintBottom_toTopOf="@+id/bottomNavigation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/aracRecyclerView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".secimFragment">
+
+    <Button
+        android:id="@+id/ilanlaraBakbutton"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="66dp"
+        android:layout_marginEnd="66dp"
+        android:layout_marginBottom="28dp"
+        android:text="İlanlara git"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/profilAyarbutton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView6" />
+
+    <Button
+        android:id="@+id/profilAyarbutton"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="391dp"
+        android:text="Profil ayarlarına git"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/ilanlaraBakbutton"
+        app:layout_constraintStart_toStartOf="@+id/ilanlaraBakbutton"
+        app:layout_constraintTop_toBottomOf="@+id/ilanlaraBakbutton" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="138dp"
+        android:layout_marginBottom="62dp"
+        android:src="@drawable/car"
+        app:layout_constraintBottom_toTopOf="@+id/ilanlaraBakbutton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

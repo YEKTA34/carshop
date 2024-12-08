@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/oneFragment2">
+
+    <fragment
+        android:id="@+id/kullaniciFragment"
+        android:name="com.example.myapplication.kullaniciFragment"
+        android:label="fragment_kullanici"
+        tools:layout="@layout/fragment_kullanici" >
+        <action
+            android:id="@+id/action_kullaniciFragment_to_feedFragment"
+            app:destination="@id/feedFragment" />
+        <action
+            android:id="@+id/action_kullaniciFragment_to_secimFragment"
+            app:destination="@id/secimFragment" />
+        <action
+            android:id="@+id/action_kullaniciFragment_to_feedFragment2"
+            app:destination="@id/feedFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/feedFragment"
+        android:name="com.example.myapplication.FeedFragment"
+        android:label="fragment_feed"
+        tools:layout="@layout/fragment_feed" >
+        <action
+            android:id="@+id/action_feedFragment_to_aracdetayFragment2"
+            app:destination="@id/aracdetayFragment2" />
+        <action
+            android:id="@+id/action_feedFragment_to_aracdetayFragment22"
+            app:destination="@id/aracdetayFragment2" />
+        <action
+            android:id="@+id/action_feedFragment_to_profilFragment"
+            app:destination="@id/profilFragment" />
+        <action
+            android:id="@+id/action_feedFragment_to_sepetFragment"
+            app:destination="@id/sepetFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/oneFragment2"
+        android:name="com.example.myapplication.oneFragment"
+        android:label="fragment_one"
+        tools:layout="@layout/fragment_one" >
+        <action
+            android:id="@+id/action_oneFragment2_to_kullaniciFragment"
+            app:destination="@id/kullaniciFragment" />
+        <action
+            android:id="@+id/action_oneFragment2_to_adminFragment"
+            app:destination="@id/AdminFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/AdminFragment"
+        android:name="com.example.myapplication.adminFragment"
+        android:label="fragment_admin"
+        tools:layout="@layout/fragment_admin" >
+        <action
+            android:id="@+id/action_adminFragment_to_yanlisFragment"
+            app:destination="@id/yanlisFragment" />
+        <action
+            android:id="@+id/action_adminFragment_to_ilanBakYukleFragment"
+            app:destination="@id/ilanBakYukleFragment" />
+        <action
+            android:id="@+id/action_adminFragment_to_feedFragment"
+            app:destination="@id/feedFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/yanlisFragment"
+        android:name="com.example.myapplication.yanlisFragment"
+        android:label="fragment_yanlis"
+        tools:layout="@layout/fragment_yanlis" >
+        <action
+            android:id="@+id/action_yanlisFragment_to_adminFragment"
+            app:destination="@id/AdminFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/secimFragment"
+        android:name="com.example.myapplication.secimFragment"
+        android:label="fragment_secim"
+        tools:layout="@layout/fragment_secim" />
+    <argument
+        android:name="car id"
+        app:argType="integer" />
+    <fragment
+        android:id="@+id/aracdetayFragment2"
+        android:name="com.example.myapplication.view.aracdetayFragment"
+        android:label="fragment_aracdetay"
+        tools:layout="@layout/fragment_aracdetay" >
+        <argument
+            android:name="arabaId"
+            app:argType="integer" />
+        <action
+            android:id="@+id/action_aracdetayFragment2_to_sepetFragment"
+            app:destination="@id/sepetFragment" />
+        <action
+            android:id="@+id/action_aracdetayFragment2_to_feedFragment"
+            app:destination="@id/feedFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/sepetFragment"
+        android:name="com.example.myapplication.SepetFragment"
+        android:label="fragment_sepet"
+        tools:layout="@layout/fragment_sepet" />
+    <fragment
+        android:id="@+id/profilFragment"
+        android:name="com.example.myapplication.ProfilFragment"
+        android:label="fragment_profil"
+        tools:layout="@layout/fragment_profil" />
+    <fragment
+        android:id="@+id/ilanBakYukleFragment"
+        android:name="com.example.myapplication.ilanBakYukleFragment"
+        android:label="ilanBakYukleFragment" >
+        <action
+            android:id="@+id/action_ilanBakYukleFragment_to_arabaEkleFragment"
+            app:destination="@id/arabaEkleFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/arabaEkleFragment"
+        android:name="ArabaEkleFragment"
+        android:label="ArabaEkleFragment" />
+</navigation>

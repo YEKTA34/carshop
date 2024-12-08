@@ -1,0 +1,55 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/markaEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Marka" />
+
+    <EditText
+        android:id="@+id/modelEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Model" />
+
+    <EditText
+        android:id="@+id/fiyatEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Fiyat" />
+
+    <EditText
+        android:id="@+id/motorGucEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Motor Gücü (cc)" />
+
+    <EditText
+        android:id="@+id/hpEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Beygir Gücü (hp)"/>
+
+    <EditText
+        android:id="@+id/yakitEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Yakıt türü"/>
+
+    <EditText
+        android:id="@+id/gorselUrlEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Görsel URL" />
+
+    <Button
+        android:id="@+id/ekleButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ekle" />
+</LinearLayout>

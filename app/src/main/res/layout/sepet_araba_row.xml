@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="?android:attr/selectableItemBackground"
+    android:layout_marginBottom="8dp">
+
+    <!-- Marka TextView -->
+    <TextView
+        android:id="@+id/markaTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Marka"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:paddingBottom="4dp"/>
+
+    <!-- Model TextView -->
+    <TextView
+        android:id="@+id/modelTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Model"
+        android:textSize="16sp"
+        android:paddingBottom="4dp"/>
+
+    <!-- Fiyat TextView -->
+    <TextView
+        android:id="@+id/fiyatTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fiyat"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/holo_red_dark"
+        android:paddingTop="4dp"/>
+</LinearLayout>
+
+
